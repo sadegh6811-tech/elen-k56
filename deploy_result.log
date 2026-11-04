@@ -1,0 +1,90 @@
+Vercel CLI 64.2.0 (Node.js 24.22.1)
+Deploying auth-portal
+Uploading [--------------------] (0.0B/22.8KB)
+Uploading [===============-----] (18.1KB/22.8KB)
+Uploading [===================-] (22.4KB/22.8KB)
+Uploading [====================] (22.8KB/22.8KB)
+  Inspect         https://vercel.com/sadegh6811/auth-portal/F4ahjB5DUKcm3y6ar6BJF7XadTLD
+  Production      https://auth-portal-804tkuals-sadegh6811.vercel.app
+https://auth-portal-804tkuals-sadegh6811.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Skipping build cache, deployment was triggered without cache.
+Downloading 32 deployment files...
+Running "vercel build"
+Vercel CLI 65.4.0
+Installing dependencies...
+npm warn Unknown env config "cache-dir". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+added 130 packages in 12s
+25 packages are looking for funding
+run `npm fund` for details
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.21.5 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+Running "npm run build"
+npm warn Unknown env config "cache-dir". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+> elen-auth-portal@1.0.0 build
+> vite build
+vite v5.4.21 building for production...
+transforming...
+✓ 3 modules transformed.
+x Build failed in 408ms
+error during build:
+[vite:css] [postcss] postcss-import: /vercel/path0/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"
+file: /vercel/path0/src/index.css:1:0
+at Input.error (/vercel/path0/node_modules/postcss/lib/input.js:135:16)
+at Parser.unknownWord (/vercel/path0/node_modules/postcss/lib/parser.js:610:22)
+at Parser.other (/vercel/path0/node_modules/postcss/lib/parser.js:447:12)
+at Parser.parse (/vercel/path0/node_modules/postcss/lib/parser.js:482:16)
+at parse (/vercel/path0/node_modules/postcss/lib/parse.js:11:12)
+at get root (/vercel/path0/node_modules/postcss/lib/no-work-result.js:43:14)
+at Result.get [as root] (/vercel/path0/node_modules/postcss/lib/no-work-result.js:76:21)
+at loadImportContent (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-BB45zftN.js:867:33)
+at async Promise.all (index 0)
+at async resolveImportId (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-BB45zftN.js:800:27)
+Error: [BUILD_UTILS_SPAWN_1] Command "npm run build" exited with 1
+2026-10-30T03:22:57.839Z  Running build in Washington, D.C., USA (East) – iad1
+2026-10-30T03:22:57.840Z  Build machine configuration: 2 cores, 8 GB
+2026-10-30T03:22:57.855Z  Retrieving list of deployment files...
+2026-10-30T03:22:57.882Z  Skipping build cache, deployment was triggered without cache.
+2026-10-30T03:22:58.180Z  Downloading 32 deployment files...
+2026-10-30T03:22:58.849Z  Running "vercel build"
+2026-10-30T03:22:58.861Z  Vercel CLI 65.4.0
+2026-10-30T03:22:59.391Z  Installing dependencies...
+2026-10-30T03:22:59.996Z  npm warn Unknown env config "cache-dir". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-10-30T03:23:11.582Z  
+2026-10-30T03:23:11.582Z  added 130 packages in 12s
+2026-10-30T03:23:11.582Z  
+2026-10-30T03:23:11.582Z  25 packages are looking for funding
+2026-10-30T03:23:11.582Z  run `npm fund` for details
+2026-10-30T03:23:11.584Z  npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+2026-10-30T03:23:11.584Z  npm warn install-scripts   esbuild@0.21.5 (postinstall: node install.js)
+2026-10-30T03:23:11.584Z  npm warn install-scripts
+2026-10-30T03:23:11.584Z  npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+2026-10-30T03:23:11.637Z  Running "npm run build"
+2026-10-30T03:23:11.742Z  npm warn Unknown env config "cache-dir". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-10-30T03:23:11.757Z  
+2026-10-30T03:23:11.757Z  > elen-auth-portal@1.0.0 build
+2026-10-30T03:23:11.757Z  > vite build
+2026-10-30T03:23:11.757Z  
+2026-10-30T03:23:12.014Z  vite v5.4.21 building for production...
+2026-10-30T03:23:12.083Z  transforming...
+2026-10-30T03:23:12.453Z  ✓ 3 modules transformed.
+2026-10-30T03:23:12.454Z  x Build failed in 408ms
+2026-10-30T03:23:12.454Z  error during build:
+2026-10-30T03:23:12.454Z  [vite:css] [postcss] postcss-import: /vercel/path0/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"
+2026-10-30T03:23:12.454Z  file: /vercel/path0/src/index.css:1:0
+2026-10-30T03:23:12.454Z  at Input.error (/vercel/path0/node_modules/postcss/lib/input.js:135:16)
+2026-10-30T03:23:12.454Z  at Parser.unknownWord (/vercel/path0/node_modules/postcss/lib/parser.js:610:22)
+2026-10-30T03:23:12.454Z  at Parser.other (/vercel/path0/node_modules/postcss/lib/parser.js:447:12)
+2026-10-30T03:23:12.454Z  at Parser.parse (/vercel/path0/node_modules/postcss/lib/parser.js:482:16)
+2026-10-30T03:23:12.454Z  at parse (/vercel/path0/node_modules/postcss/lib/parse.js:11:12)
+2026-10-30T03:23:12.454Z  at get root (/vercel/path0/node_modules/postcss/lib/no-work-result.js:43:14)
+2026-10-30T03:23:12.454Z  at Result.get [as root] (/vercel/path0/node_modules/postcss/lib/no-work-result.js:76:21)
+2026-10-30T03:23:12.454Z  at loadImportContent (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-BB45zftN.js:867:33)
+2026-10-30T03:23:12.454Z  at async Promise.all (index 0)
+2026-10-30T03:23:12.454Z  at async resolveImportId (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-BB45zftN.js:800:27)
+2026-10-30T03:23:12.479Z  Error: [BUILD_UTILS_SPAWN_1] Command "npm run build" exited with 1

@@ -1,0 +1,31 @@
+
+> elen-auth-portal@1.0.0 build
+> vite build
+
+vite v7.3.2 building client environment for production...
+transforming...
+✓ 221 modules transformed.
+✗ Build failed in 2.32s
+error during build:
+[vite:esbuild] Transform failed with 1 error:
+/data/data/com.termux/files/home/Nazi/auth-portal/src/components/AuthCard.tsx:17:36: ERROR: Syntax error "`"
+file: /data/data/com.termux/files/home/Nazi/auth-portal/src/components/AuthCard.tsx:17:36
+
+Syntax error "`"
+15 |  
+16 |      try {
+17 |        const response = await fetch(\`\${API_URL}/api/login\`, {
+   |                                      ^
+18 |          method: 'POST',
+19 |          headers: {
+
+    at failureErrorWithLog (/data/data/com.termux/files/home/Nazi/auth-portal/node_modules/esbuild/lib/main.js:1748:15)
+    at /data/data/com.termux/files/home/Nazi/auth-portal/node_modules/esbuild/lib/main.js:1017:50
+    at responseCallbacks.<computed> (/data/data/com.termux/files/home/Nazi/auth-portal/node_modules/esbuild/lib/main.js:884:9)
+    at handleIncomingPacket (/data/data/com.termux/files/home/Nazi/auth-portal/node_modules/esbuild/lib/main.js:939:12)
+    at Socket.readFromStdout (/data/data/com.termux/files/home/Nazi/auth-portal/node_modules/esbuild/lib/main.js:862:7)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:569:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:520:3)
+    at Readable.push (node:internal/streams/readable:400:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:194:23)

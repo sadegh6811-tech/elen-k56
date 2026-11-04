@@ -1,0 +1,19 @@
+
+> elen-auth-portal@1.0.0 build
+> vite build
+
+vite v7.3.2 building client environment for production...
+transforming...
+✓ 2 modules transformed.
+✗ Build failed in 354ms
+error during build:
+Source phase import "/src/main.tsx" in "index.html" must be external. Source phase imports are only supported for external modules. Use the "external" option to mark this module as external.
+    at getRollupError (file:///data/data/com.termux/files/home/Nazi/auth-portal/node_modules/rollup/dist/es/shared/parseAst.js:337:41)
+    at error (file:///data/data/com.termux/files/home/Nazi/auth-portal/node_modules/rollup/dist/es/shared/parseAst.js:333:42)
+    at file:///data/data/com.termux/files/home/Nazi/auth-portal/node_modules/rollup/dist/es/shared/node-entry.js:22941:24
+    at async Promise.all (index 0)
+    at async ModuleLoader.fetchStaticDependencies (file:///data/data/com.termux/files/home/Nazi/auth-portal/node_modules/rollup/dist/es/shared/node-entry.js:22939:34)
+    at async Promise.all (index 0)
+    at async ModuleLoader.fetchModuleDependencies (file:///data/data/com.termux/files/home/Nazi/auth-portal/node_modules/rollup/dist/es/shared/node-entry.js:22912:9)
+    at async ModuleLoader.fetchModule (file:///data/data/com.termux/files/home/Nazi/auth-portal/node_modules/rollup/dist/es/shared/node-entry.js:22900:13)
+    at async Promise.all (index 0)

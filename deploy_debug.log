@@ -1,0 +1,178 @@
+Vercel CLI 64.2.0 (Node.js 24.22.1)
+> [debug] [2026-10-30T03:21:03.732Z] Agent/TTY/nonInteractive: isAgent=false agentName=none stdin.isTTY=true --non-interactive=false explicitFalse=false => nonInteractive=false
+> [debug] [2026-10-30T03:21:03.740Z] user supplied a possible target for deployment or an extension
+> [debug] [2026-10-30T03:21:04.134Z] failed to find extension command with name "vercel---prod"
+> [debug] [2026-10-30T03:21:04.920Z] Setting target to production
+> [debug] [2026-10-30T03:21:04.966Z] Arrived at home directory
+> [debug] [2026-10-30T03:21:05.009Z] Found git root via "git rev-parse --show-toplevel" - detected "/data/data/com.termux/files/home/Nazi/auth-portal" as repo root
+
+  Directory       ~/Nazi/auth-portal
+
+> [debug] [2026-10-30T03:21:05.090Z] Spinner invoked (Loading teams…) with a 1000ms delay
+> [debug] [2026-10-30T03:21:05.096Z] Valid access token, skipping token refresh.
+> [debug] [2026-10-30T03:21:05.200Z] #1 → GET https://api.vercel.com/v2/user
+> [debug] [2026-10-30T03:21:05.206Z] #2 → GET https://api.vercel.com/v1/teams
+> [debug] [2026-10-30T03:21:07.894Z] #1 ← 200 OK: fra1:fra1:sfo1::s8tg7-1793330467243-235eb7aea8fe [2.69s]
+> [debug] [2026-10-30T03:21:08.496Z] #2 ← 200 OK: fra1:fra1:sfo1::nmp7b-1793330467702-1707f74bf29b [3.29s]
+  Team            sadegh6811
+> [debug] [2026-10-30T03:21:08.544Z] Spinner invoked (Searching for existing projects…) with a 1000ms delay
+> [debug] [2026-10-30T03:21:08.547Z] Arrived at home directory
+> [debug] [2026-10-30T03:21:08.592Z] Found git root via "git rev-parse --show-toplevel" - detected "/data/data/com.termux/files/home/Nazi/auth-portal" as repo root
+> [debug] [2026-10-30T03:21:08.726Z] Spinner invoked (Searching for existing projects…) with a 1000ms delay
+> [debug] [2026-10-30T03:21:08.736Z] #3 → GET https://api.vercel.com/v9/projects/auth-portal?teamId=team_6CNHM5sCiJyINRoH4m7BIwM4
+> [debug] [2026-10-30T03:21:09.519Z] #3 ← 200 OK: fra1:fra1:sfo1::gbqtr-1793330468688-8a52241cc262 [783ms]
+> [debug] [2026-10-30T03:21:09.529Z] Arrived at home directory
+> [debug] [2026-10-30T03:21:09.572Z] Found git root via "git rev-parse --show-toplevel" - detected "/data/data/com.termux/files/home/Nazi/auth-portal" as repo root
+
+✓ Linked          sadegh6811/auth-portal
+
+> [debug] [2026-10-30T03:21:09.645Z] Spinner invoked (Retrieving project…) with a 1000ms delay
+> [debug] [2026-10-30T03:21:09.650Z] #4 → GET https://api.vercel.com/v9/projects/prj_rwrbEmsVDWtQwPoemu4P9RGcoBSv?teamId=team_6CNHM5sCiJyINRoH4m7BIwM4
+> [debug] [2026-10-30T03:21:10.097Z] #4 ← 200 OK: fra1:fra1:sfo1::9sn89-1793330469593-596fae136872 [447ms]
+> Overwriting existing .env.local file
+> Downloading `development` environment variables for auth-portal
+> [debug] [2026-10-30T03:21:10.145Z] Spinner invoked (Downloading) with a 300ms delay
+> [debug] [2026-10-30T03:21:10.146Z] Fetching Environment Variables of prj_rwrbEmsVDWtQwPoemu4P9RGcoBSv and target development
+> [debug] [2026-10-30T03:21:10.153Z] #5 → GET https://api.vercel.com/v3/env/pull/prj_rwrbEmsVDWtQwPoemu4P9RGcoBSv/development?source=vercel-cli%3Alink&teamId=team_6CNHM5sCiJyINRoH4m7BIwM4
+> [debug] [2026-10-30T03:21:10.746Z] #5 ← 200 OK: fra1:fra1:sfo1::vfrt7-1793330470103-799685fddac3 [593ms]
+
+  Changes:
+  + VERCEL_OIDC_TOKEN (Updated)
+
+
+✓ Updated         .env.local file
+> [debug] [2026-10-30T03:21:10.939Z] Spinner invoked (Deploying sadegh6811/auth-portal) with a 0ms delay
+[client-debug] 2026-10-30T03:21:10.941Z Creating deployment...
+[client-debug] 2026-10-30T03:21:10.942Z Provided 'path' is a directory.
+> [debug] [2026-10-30T03:21:10.947Z] Failed to get last commit. The directory is likely not a Git repo, there are no latest commits, or it is corrupted.
+Command failed: git rev-parse --show-toplevel --abbrev-ref HEAD
+fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+[client-debug] 2026-10-30T03:21:10.949Z Found 26 rules in .vercelignore
+[client-debug] 2026-10-30T03:21:10.950Z Building file tree...
+[client-debug] 2026-10-30T03:21:10.967Z Found 29 files in the specified directory
+[client-debug] 2026-10-30T03:21:11.086Z Yielding a 'hashes-calculated' event with 29 hashes
+[client-debug] 2026-10-30T03:21:11.088Z Using provided API URL: https://api.vercel.com
+[client-debug] 2026-10-30T03:21:11.088Z Using provided user agent: vercel 64.2.0 node-v24.22.1 android (arm64)
+[client-debug] 2026-10-30T03:21:11.089Z Setting platform version to harcoded value 2
+[client-debug] 2026-10-30T03:21:11.089Z Creating the deployment and starting upload...
+[client-debug] 2026-10-30T03:21:11.090Z Determining necessary files for upload...
+[client-debug] 2026-10-30T03:21:11.090Z Creating deployment
+[client-debug] 2026-10-30T03:21:11.093Z Sending deployment creation API request
+[client-debug] 2026-10-30T03:21:12.649Z Deployment response: {"error":{"code":"missing_files","message":"Missing files","missing":["4092a2d0e97c108d13e950f0b1f19af0554f3c97","46e4dffc9cf8875abd41f5e7141de2141c379433","ee8fcf8afd1fb20b6a51bc386c58d40ac9d48aa7"]}}
+[client-debug] 2026-10-30T03:21:12.650Z Error: Deployment request status is 400
+[client-debug] 2026-10-30T03:21:12.650Z 3 files are required to upload
+[client-debug] 2026-10-30T03:21:12.651Z Yielding a 'file-count' event
+> [debug] [2026-10-30T03:21:12.651Z] Total files 29, 3 changed
+> [debug] [2026-10-30T03:21:12.653Z] Spinner invoked (Uploading [--------------------] (0.0B/8.9KB)) with a 0ms delay
+[client-debug] 2026-10-30T03:21:12.655Z Building an upload list...
+[client-debug] 2026-10-30T03:21:12.660Z Starting upload
+[client-debug] 2026-10-30T03:21:12.663Z POST https://api.vercel.com/v2/files
+[client-debug] 2026-10-30T03:21:12.670Z POST https://api.vercel.com/v2/files
+[client-debug] 2026-10-30T03:21:12.673Z POST https://api.vercel.com/v2/files
+> [debug] [2026-10-30T03:21:12.689Z] Spinner invoked (Uploading [=========-----------] (4.1KB/8.9KB)) with a 0ms delay
+> [debug] [2026-10-30T03:21:12.690Z] Spinner invoked (Uploading [=============-------] (6.0KB/8.9KB)) with a 0ms delay
+> [debug] [2026-10-30T03:21:12.690Z] Spinner invoked (Uploading [====================] (8.9KB/8.9KB)) with a 0ms delay
+[client-debug] 2026-10-30T03:21:14.823Z DONE in 2159ms: POST https://api.vercel.com/v2/files status=200 requestId=fra1:fra1:sfo1::xc8wp-1793330474157-911300c4892d
+[client-debug] 2026-10-30T03:21:14.823Z File 4092a2d0e97c108d13e950f0b1f19af0554f3c97 (/data/data/com.termux/files/home/Nazi/auth-portal/deploy_debug.log) uploaded
+[client-debug] 2026-10-30T03:21:14.823Z Yielding a 'file-uploaded' event
+> [debug] [2026-10-30T03:21:14.825Z] Uploaded: /data/data/com.termux/files/home/Nazi/auth-portal/deploy_debug.log (4.1KB)
+[client-debug] 2026-10-30T03:21:15.653Z DONE in 2979ms: POST https://api.vercel.com/v2/files status=200 requestId=fra1:fra1:sfo1::ngd8j-1793330474757-b8539745d0c0
+[client-debug] 2026-10-30T03:21:15.654Z File ee8fcf8afd1fb20b6a51bc386c58d40ac9d48aa7 (/data/data/com.termux/files/home/Nazi/auth-portal/train_bot_v12.sh) uploaded
+[client-debug] 2026-10-30T03:21:15.654Z Yielding a 'file-uploaded' event
+> [debug] [2026-10-30T03:21:15.654Z] Uploaded: /data/data/com.termux/files/home/Nazi/auth-portal/train_bot_v12.sh (2.91KB)
+[client-debug] 2026-10-30T03:21:15.660Z DONE in 2990ms: POST https://api.vercel.com/v2/files status=200 requestId=fra1:fra1:sfo1::4gmdt-1793330474603-97aeba4dfb80
+[client-debug] 2026-10-30T03:21:15.661Z File 46e4dffc9cf8875abd41f5e7141de2141c379433 (/data/data/com.termux/files/home/Nazi/auth-portal/deploy_result.log) uploaded
+[client-debug] 2026-10-30T03:21:15.661Z Yielding a 'file-uploaded' event
+> [debug] [2026-10-30T03:21:15.662Z] Uploaded: /data/data/com.termux/files/home/Nazi/auth-portal/deploy_result.log (1.92KB)
+[client-debug] 2026-10-30T03:21:15.662Z All files uploaded
+[client-debug] 2026-10-30T03:21:15.662Z Yielding a 'all-files-uploaded' event
+[client-debug] 2026-10-30T03:21:15.662Z Starting deployment creation
+[client-debug] 2026-10-30T03:21:15.663Z Creating deployment
+[client-debug] 2026-10-30T03:21:15.665Z Sending deployment creation API request
+[client-debug] 2026-10-30T03:21:16.892Z Deployment response: {"alias":["auth-portal-sadegh6811.vercel.app"],"aliasAssigned":false,"automaticAliases":["auth-portal-sadegh6811.vercel.app"],"bootedAt":1793330476117,"buildingAt":1793330476117,"buildSkipped":false,"createdAt":1793330476117,"creator":{"uid":"sIbrS2LKNsHLMC7JlCwnSNAt","username":"sadegh6811-7131"},"duration":{},"id":"dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y","name":"auth-portal","meta":{},"originCacheRegion":"iad1","project":{"id":"prj_rwrbEmsVDWtQwPoemu4P9RGcoBSv","name":"auth-portal","framework":"vite"},"public":false,"readyState":"INITIALIZING","regions":["iad1"],"source":"cli","status":"INITIALIZING","target":"production","team":{"id":"team_6CNHM5sCiJyINRoH4m7BIwM4","name":"sadegh6811","slug":"sadegh6811"},"type":"LAMBDAS","url":"auth-portal-auxpi2uu7-sadegh6811.vercel.app","version":2,"previewCommentsEnabled":true,"oidcTokenClaims":{"sub":"owner:sadegh6811:project:auth-portal:environment:production","iss":"https://oidc.vercel.com/sadegh6811","scope":"owner:sadegh6811:project:auth-portal:environment:production","aud":"https://vercel.com/sadegh6811","owner":"sadegh6811","owner_id":"team_6CNHM5sCiJyINRoH4m7BIwM4","project":"auth-portal","project_id":"prj_rwrbEmsVDWtQwPoemu4P9RGcoBSv","deployment_id":"dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y","environment":"production","plan":"hobby"},"lambdas":[{"id":"bld_lzu095mme","createdAt":1793330475852,"entrypoint":".","readyState":"READY","readyStateAt":1793330475852,"output":[]}],"aliasAssignedAt":null,"build":{"env":[]},"builds":[],"createdIn":"sfo1","env":[],"functions":null,"inspectorUrl":"https://vercel.com/sadegh6811/auth-portal/2FJfU7ZQanA3CsGKgUgh3H8Kxo8y","isInConcurrentBuildsQueue":false,"isInSystemBuildsQueue":true,"ownerId":"team_6CNHM5sCiJyINRoH4m7BIwM4","plan":"hobby","projectId":"prj_rwrbEmsVDWtQwPoemu4P9RGcoBSv","resourceConfig":{"buildMachine":{"defaultPurchaseType":"basic","machineSelectionType":"fixed","purchaseType":"basic","selectionSource":"plan-default","cores":2,"memory":8192}},"projectSettings":{"buildCommand":null,"devCommand":null,"framework":"vite","commandForIgnoringBuildStep":null,"installCommand":null,"outputDirectory":null,"speedInsights":{"id":"O024cAG1SnTQUcZSrtJOjG2IBwl","hasData":false},"webAnalytics":{"id":"GnbE1jhZuDVTP0Ek2fw0objkS"},"nodeVersion":"26.x"},"routes":null,"config":{"version":1,"secureComputePrimaryRegion":null,"secureComputeFallbackRegion":null,"functionTimeout":300,"functionType":"fluid","functionMemoryType":"standard","isUsingActiveCPU":true,"resourceConfig":{"buildMachine":{"defaultPurchaseType":"basic","machineSelectionType":"fixed","purchaseType":"basic","selectionSource":"plan-default","cores":2,"memory":8192},"buildQueue":{"configuration":"SKIP_NAMESPACE_QUEUE"}}}}
+[client-debug] 2026-10-30T03:21:16.893Z Deployment created
+[client-debug] 2026-10-30T03:21:16.894Z Yielding a 'created' event
+  Inspect         https://vercel.com/sadegh6811/auth-portal/2FJfU7ZQanA3CsGKgUgh3H8Kxo8y
+  Production      https://auth-portal-auxpi2uu7-sadegh6811.vercel.app
+https://auth-portal-auxpi2uu7-sadegh6811.vercel.app> [debug] [2026-10-30T03:21:16.929Z] Spinner invoked (Building…) with a 0ms delay
+> [debug] [2026-10-30T03:21:16.931Z] #6 → GET https://api.vercel.com/v3/now/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y/events?direction=forward&follow=1&format=lines&teamId=team_6CNHM5sCiJyINRoH4m7BIwM4
+[client-debug] 2026-10-30T03:21:16.932Z Waiting for deployment to be ready...
+[client-debug] 2026-10-30T03:21:16.934Z Waiting for builds and the deployment to complete...
+[client-debug] 2026-10-30T03:21:16.934Z GET https://api.vercel.com/v13/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y
+[client-debug] 2026-10-30T03:21:17.545Z DONE in 610ms: GET https://api.vercel.com/v13/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y status=200 requestId=fra1:fra1:sfo1::wns2v-1793330476881-1e663652fbc5
+[client-debug] 2026-10-30T03:21:18.602Z GET https://api.vercel.com/v13/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y
+[client-debug] 2026-10-30T03:21:19.367Z DONE in 765ms: GET https://api.vercel.com/v13/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y status=200 requestId=fra1:fra1:sfo1::hshgd-1793330478567-4d9013781c4d
+[client-debug] 2026-10-30T03:21:19.376Z Deployment state changed to BUILDING
+[client-debug] 2026-10-30T03:21:19.376Z Yielding a 'building' event
+> [debug] [2026-10-30T03:21:19.377Z] Spinner invoked (Building…) with a 0ms delay
+> [debug] [2026-10-30T03:21:19.707Z] #6 ← 200 OK: fra1:fra1:sfo1::l6mps-1793330476881-f6b9018f227d [2.78s]
+> [debug] [2026-10-30T03:21:19.849Z] Spinner invoked (Running build in Washington, D.C., USA (East) – iad1) with a 0ms delay
+> [debug] [2026-10-30T03:21:19.852Z] Spinner invoked (Build machine configuration: 2 cores, 8 GB) with a 0ms delay
+> [debug] [2026-10-30T03:21:19.852Z] Spinner invoked (Retrieving list of deployment files...) with a 0ms delay
+> [debug] [2026-10-30T03:21:19.853Z] Spinner invoked (Downloading 29 deployment files...) with a 0ms delay
+> [debug] [2026-10-30T03:21:19.854Z] Spinner invoked (Restored build cache from previous deployment (4sVfdrEdDF8Uj33T3bN897fV4Pp5)) with a 0ms delay
+[client-debug] 2026-10-30T03:21:20.379Z GET https://api.vercel.com/v13/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y
+> [debug] [2026-10-30T03:21:20.509Z] Spinner invoked (Running "vercel build") with a 0ms delay
+> [debug] [2026-10-30T03:21:20.510Z] Spinner invoked (Vercel CLI 65.4.0) with a 0ms delay
+> [debug] [2026-10-30T03:21:20.511Z] Spinner invoked (Installing dependencies...) with a 0ms delay
+[client-debug] 2026-10-30T03:21:21.082Z DONE in 702ms: GET https://api.vercel.com/v13/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y status=200 requestId=fra1:fra1:sfo1::mh4hp-1793330480357-287213be1c01
+> [debug] [2026-10-30T03:21:21.540Z] Spinner invoked (npm warn Unknown env config "cache-dir". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.) with a 0ms delay
+[client-debug] 2026-10-30T03:21:22.096Z GET https://api.vercel.com/v13/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y
+[client-debug] 2026-10-30T03:21:22.686Z DONE in 590ms: GET https://api.vercel.com/v13/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y status=200 requestId=fra1:fra1:sfo1::ttx46-1793330482040-8d864acc20c4
+[client-debug] 2026-10-30T03:21:24.157Z GET https://api.vercel.com/v13/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y
+[client-debug] 2026-10-30T03:21:24.924Z DONE in 766ms: GET https://api.vercel.com/v13/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y status=200 requestId=fra1:fra1:sfo1::59vm7-1793330484102-c48faeca4805
+[client-debug] 2026-10-30T03:21:25.937Z GET https://api.vercel.com/v13/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y
+[client-debug] 2026-10-30T03:21:26.659Z DONE in 722ms: GET https://api.vercel.com/v13/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y status=200 requestId=fra1:fra1:sfo1::w6kj5-1793330485889-700c3b10c665
+[client-debug] 2026-10-30T03:21:27.675Z GET https://api.vercel.com/v13/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y
+> [debug] [2026-10-30T03:21:28.673Z] Spinner invoked (added 1 package, removed 34 packages, and changed 9 packages in 6s) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.674Z] Spinner invoked (7 packages are looking for funding) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.674Z] Spinner invoked (run `npm fund` for details) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.675Z] Spinner invoked (npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.676Z] Spinner invoked (npm warn install-scripts   esbuild@0.21.5 (postinstall: node install.js)) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.676Z] Spinner invoked (npm warn install-scripts) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.677Z] Spinner invoked (npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.677Z] Spinner invoked (Running "npm run build") with a 0ms delay
+> [debug] [2026-10-30T03:21:28.678Z] Spinner invoked (npm warn Unknown env config "cache-dir". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.683Z] Spinner invoked (> elen-auth-portal@1.0.0 build) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.684Z] Spinner invoked (> vite build) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.685Z] Spinner invoked (vite v5.4.21 building for production...) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.685Z] Spinner invoked (transforming...) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.686Z] Spinner invoked (Unable to resolve `@import "tailwindcss"` from /vercel/path0/src) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.688Z] Spinner invoked (✓ 3 modules transformed.) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.688Z] Spinner invoked (x Build failed in 117ms) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.689Z] Spinner invoked (error during build:) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.689Z] Spinner invoked ([vite:css] [postcss] ENOENT: no such file or directory, open 'tailwindcss') with a 0ms delay
+> [debug] [2026-10-30T03:21:28.689Z] Spinner invoked (file: /vercel/path0/src/index.css:undefined:NaN) with a 0ms delay
+> [debug] [2026-10-30T03:21:28.690Z] Spinner invoked (Error: [postcss] ENOENT: no such file or directory, open 'tailwindcss') with a 0ms delay
+> [debug] [2026-10-30T03:21:28.690Z] Spinner invoked (Error: [BUILD_UTILS_SPAWN_1] Command "npm run build" exited with 1) with a 0ms delay
+[client-debug] 2026-10-30T03:21:28.754Z DONE in 1079ms: GET https://api.vercel.com/v13/deployments/dpl_2FJfU7ZQanA3CsGKgUgh3H8Kxo8y status=200 requestId=fra1:fra1:sfo1::wfktf-1793330487625-47ba013ba6ef
+[client-debug] 2026-10-30T03:21:28.762Z Yielding a 'error' event
+> [debug] [2026-10-30T03:21:28.792Z] Error: Error: Command "npm run build" exited with 1
+Error: Command "npm run build" exited with 1
+    at Now.handleDeploymentError (file:///data/data/com.termux/files/usr/lib/node_modules/vercel/dist/chunks/chunk-IRJ5XFT2.js:12:3753)
+    at processDeployment (file:///data/data/com.termux/files/usr/lib/node_modules/vercel/dist/chunks/chunk-IRJ5XFT2.js:10:10422)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Now.create (file:///data/data/com.termux/files/usr/lib/node_modules/vercel/dist/chunks/chunk-IRJ5XFT2.js:12:1240)
+    at async createDeploy (file:///data/data/com.termux/files/usr/lib/node_modules/vercel/dist/commands/deploy/index.js:7:6667)
+    at async runDefaultDeploy (file:///data/data/com.termux/files/usr/lib/node_modules/vercel/dist/commands/deploy/index.js:43:3360)
+    at async handleDefaultDeploy (file:///data/data/com.termux/files/usr/lib/node_modules/vercel/dist/commands/deploy/index.js:34:4223)
+    at async _Span.trace (/data/data/com.termux/files/usr/lib/node_modules/vercel/node_modules/@vercel/build-utils/dist/index.js:109:4571)
+    at async main (file:///data/data/com.termux/files/usr/lib/node_modules/vercel/dist/index.js:13:26428)
+> [debug] [2026-10-30T03:21:28.794Z] handling error: Error: Command "npm run build" exited with 1
+    at Now.handleDeploymentError (file:///data/data/com.termux/files/usr/lib/node_modules/vercel/dist/chunks/chunk-IRJ5XFT2.js:12:3753)
+    at processDeployment (file:///data/data/com.termux/files/usr/lib/node_modules/vercel/dist/chunks/chunk-IRJ5XFT2.js:10:10422)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Now.create (file:///data/data/com.termux/files/usr/lib/node_modules/vercel/dist/chunks/chunk-IRJ5XFT2.js:12:1240)
+    at async createDeploy (file:///data/data/com.termux/files/usr/lib/node_modules/vercel/dist/commands/deploy/index.js:7:6667)
+    at async runDefaultDeploy (file:///data/data/com.termux/files/usr/lib/node_modules/vercel/dist/commands/deploy/index.js:43:3360)
+    at async handleDefaultDeploy (file:///data/data/com.termux/files/usr/lib/node_modules/vercel/dist/commands/deploy/index.js:34:4223)
+    at async _Span.trace (/data/data/com.termux/files/usr/lib/node_modules/vercel/node_modules/@vercel/build-utils/dist/index.js:109:4571)
+    at async main (file:///data/data/com.termux/files/usr/lib/node_modules/vercel/dist/index.js:13:26428)
+Error: Command "npm run build" exited with 1
+> [debug] [2026-10-30T03:21:29.933Z] Vercel CLI 64.2.0 (Node.js 24.22.1)
+
+> [debug] [2026-10-30T03:21:30.839Z] Telemetry subprocess killed due to timeout
+> [debug] [2026-10-30T03:21:30.865Z] Telemetry subprocess exited with code null
